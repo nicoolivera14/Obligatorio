@@ -19,7 +19,7 @@ import com.tuorganizacion.backend.model.GPTResponse;
 public class OpenAIService {
 
 
-    private final String apiKey = "open";
+    private final String apiKey = "";
 
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;

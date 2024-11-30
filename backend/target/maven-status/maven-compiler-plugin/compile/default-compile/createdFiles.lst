@@ -1,8 +1,0 @@
-com\tuorganizacion\backend\config\AppConfig$1.class
-com\tuorganizacion\backend\services\PreguntaService.class
-com\tuorganizacion\backend\config\AppConfig.class
-com\tuorganizacion\backend\model\GPTRequest$Message.class
-com\tuorganizacion\backend\model\GPTRequest.class
-com\tuorganizacion\backend\services\OpenAIService.class
-com\tuorganizacion\backend\BackendApplication.class
-com\tuorganizacion\backend\model\Pregunta.class

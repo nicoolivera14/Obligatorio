@@ -1,0 +1,12 @@
+.greeting-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  

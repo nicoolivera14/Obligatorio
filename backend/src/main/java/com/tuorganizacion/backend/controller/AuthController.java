@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tuorganizacion.backend.model.Usuario;
 import com.tuorganizacion.backend.repository.UserRepository;
+import com.tuorganizacion.backend.services.ResponseMessage;
 
 @RestController
 @RequestMapping("/auth")
@@ -30,7 +31,7 @@ public class AuthController {
         Optional<Usuario> usuario = userRepository.findByUsername(request.getUsername());
 
         if (usuario.isPresent() && passwordEncoder.matches(request.getPassword(), usuario.get().getPassword())) {
-            return ResponseEntity.ok().body("Login successful");
+            return ResponseEntity.ok().body(new ResponseMessage("Login successful"));
         }
 
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
