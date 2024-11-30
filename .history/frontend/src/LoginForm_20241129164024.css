@@ -1,0 +1,86 @@
+/* LoginForm.css */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(145deg, #2c2c54, #484872);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    background: #1d1d1e;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0px;
+    background: #484872;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: 2px solid #ffb400;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #1f1f3d;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ffb400;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #ffb400;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
