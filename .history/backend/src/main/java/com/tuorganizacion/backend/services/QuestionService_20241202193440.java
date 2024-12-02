@@ -14,9 +14,9 @@ import java.util.Map;
 import java.util.Objects;
 
 @Service
-public class QuestionService {
-  @Value("${openai.api-key}")
-  private String apiKey = System.getenv("OPENAI_API_KEY");
+public class QuestionService { 
+  
+  private String apiKey;
 
   private static final String OPENAI_URL = "https://api.openai.com/v1/chat/completions";
 
