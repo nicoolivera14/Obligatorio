@@ -1,0 +1,27 @@
+package com.tuorganizacion.backend.services;
+
+package com.trivia.service;
+
+import com.tuorganizacion.backend.dto.SalaJuegoDTO;
+import com.tuorganizacion.backend.dto.*;;.dto.PlayerDTO;
+import com.tuorganizacion.backend.model.SalaJuego;
+import com.tuorganizacion.backend.model.Usuario;
+
+import org.springframework.stereotype.Service;
+
+import java.util.stream.Collectors;
+
+@Service
+public class SalaJuegoMapper {
+  public SalaJuegoDTO toDTO(SalaJuego salaJuego) {
+    SalaJuegoDTO dto = new SalaJuego();
+
+    dto.setSalaKey(salaJuego.getSalaKey());
+    dto.setJugadores(salaJuego.getJugadores().stream()
+      .map(usuario -> new UsuarioDTO(usuario.getId(), usuario.getUsername()))
+      .collect(Collectors.toList())
+    );
+
+    return dto;
+  }
+}
